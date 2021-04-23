@@ -25,7 +25,7 @@ Australia,
 <br>393126.946994288,<br>carbon_dioxide_co2_emissions_without_land_use_land_use_change_and_forestry_lulucf_in_kilotonne_co2_equivalent
 <br>
 <br>
-### __So while converting to json, it will appear almost like this__ : 
+So while converting to json, it will appear almost like this : 
 <br>
 {
     <br>
