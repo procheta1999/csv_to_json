@@ -7,7 +7,7 @@ __Tested in Windows__
 # INSTRUCTIONS: 
 1. Firstly, git bash into your folder where you have kept the .sh files.  
 2. copy the csv file (input.csv) into the folder (csv-to-json-converter) with permod.sh and csvtojson.sh files  
-3. execute the permod.sh file in the Git Bash terminal with "bash permod.sh"  
+3. execute first "chmod a+x permod.sh" ,then the permod.sh file in the Git Bash terminal with "bash permod.sh"  
 4. execute the csvtojson.sh file in the Git Bash terminal with "bash ./csvtojson.sh input.csv > output.json"  
 
 ****
