@@ -18,7 +18,7 @@ do
         head_array[$index]=$(echo $first_line | awk -v x=$(($index + 1)) -F"," '{print $x}')
         index=$(($index+1))
 done
-
+# echo ${head_array[0]} ${head_array[1]} ${head_array[2]} ${head_array[3]}
 ## creating the json file
 ix=0
 word='data'
