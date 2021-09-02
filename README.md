@@ -43,3 +43,22 @@ So while converting to json, it will appear almost like this :
 <br>
 }
 <br>]
+
+## Explanantion of the code:
+<code>input=$1</code>
+<br>Takes input parameter<br>
+<code>[ -z $1 ]</code><br>
+Checks if input[1] is empty or not<br>
+<code>[ ! -e $input ]</code><br>
+Checks for existence of filename(input)<br>
+<code>read first_line < $input</code><br>
+Reads first line of input file and stores it in first_line<br>
+<code>attributes=`echo $first_line | awk -F, {'print NF'}`</code><br>
+echo $first_line | awk -F, {'print NF'} with tail tags acts as a Bash command where:
+
+1. awk for pattern scanning and processing
+2. awk -F fs: where fs is the input seperator
+3. NF is the count of input fields.
+<br>
+
+So basically, this command returns the number of fields in the input file.
