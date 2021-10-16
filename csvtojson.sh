@@ -12,7 +12,7 @@ read first_line < $input         ## read command reads the first line
 index=0                 
 attributes=`echo $first_line | awk -F, {'print NF'}`
 lines=`cat $input | wc -l`      ## -l: count lines
-
+lines=$(($lines+1))
 while [ $index -lt $attributes ]
 do
         head_array[$index]=$(echo $first_line | awk -v x=$(($index + 1)) -F"," '{print $x}')
